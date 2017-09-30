@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Insurance lists</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://zxa011023.github.io/weatherInsurance/assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="https://weatherinsurancentustmis.mybluemix.net/" class="logo">Weather Insurance</a>
+					<nav id="nav">
+						<a href="">關於我們</a>
+						<a href="">運作方式</a>
+						<a href="">合作公司</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+		<!-- Top -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">				
+						<h2>保險清單</h2>
+						<p>Insurance Lists</p>
+						<!--<p>可以寫介紹</p>-->
+					</header>
+				</div>
+			</section>
+
+		<!-- Table -->
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th>公司名稱</th>
+							<th>保險名稱</th>
+							<th>日期</th>
+							<th>地點</th>
+							<th>保險費用</th>
+							<th>理賠金額</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{#loop}}
+						<tr>
+							<td><a href="info">{{company-name}}</a></td>
+							<td>{{insurance-name}}</td>
+							<td>{{insurance-date}}</td>
+							<td>{{insurance-location}}</td>
+							<td>{{insurance-fee}}</td>
+							<td>{{claim-amount}}</td>
+						</tr>
+						{{/loop}}
+					</tbody>
+				</table>
+			</div>
+		<!-- Scripts -->
+			<script src="https://zxa011023.github.io/weatherInsurance/assets/js/jquery.min.js"></script>
+			<script src="https://zxa011023.github.io/weatherInsurance/assets/js/skel.min.js"></script>
+			<script src="https://zxa011023.github.io/weatherInsurance/assets/js/util.js"></script>
+			<script src="https://zxa011023.github.io/weatherInsurance/assets/js/main.js"></script>
+	</body>
+</html>
